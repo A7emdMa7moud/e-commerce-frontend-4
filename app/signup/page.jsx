@@ -8,6 +8,7 @@ import { updateUserData } from "../_redux/features/user/userSlice";
 import { useDispatch } from "react-redux";
 export default function Signup() {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+  //
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,6 +27,7 @@ export default function Signup() {
     theme,
   };
   const newSignup = async (url) => {
+    console.log(`${url}/signup`);
     try {
       const res = await axios.post(`${url}/signup`, userData, {
         withCredentials: true, // Important to include cookies

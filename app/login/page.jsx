@@ -9,6 +9,7 @@ import { updateUserData } from "../_redux/features/user/userSlice";
 import { updataCart } from "../_redux/features/cart/cartSlice";
 function Login() {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL; // For Next.js
+  console.log(backendUrl)
   const dispatch = useDispatch();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
