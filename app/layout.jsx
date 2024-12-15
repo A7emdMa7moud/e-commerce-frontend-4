@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import StoreProvider from "./_redux/providers";
-// import ShowSlices from "./_components/showSlicese";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -25,7 +24,6 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} min-h-dvh`}>
         <StoreProvider>
           <Nav_bar />
-          {/* <ShowSlices /> */}
           <div className="container mx-auto pt-20 p-4 *:min-h-[90dvh]">
             {children}
           </div>
