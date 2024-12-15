@@ -30,12 +30,9 @@ export default function Layout({ children }) {
           id="ul"
           className="grid grid-cols-2 gap-2 lg:gap-4 lg:*:text-lg lg:grid-cols-4 *:text-xs *:font-bold *:tracking-wider *:bg-base-200 *:capitalize *:rounded *:p-2 *:px-4 *:text-neutral-500"
         >
-          <Link href={`http://localhost:3000/products`}>all</Link>
+          <Link href={`/products`}>all</Link>
           {categorys.map((category, i) => (
-            <Link
-              key={i}
-              href={`http://localhost:3000/products/${category.name}`}
-            >
+            <Link key={i} href={`/products/${category.name}`}>
               {category.name}
             </Link>
           ))}

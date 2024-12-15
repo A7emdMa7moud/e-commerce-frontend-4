@@ -39,9 +39,7 @@ export default function ProductCard({ e }) {
       </div>
       <br />
       <div className="flex justify-between items-center *:btn-xl lg:*:text-xl *:shadow-sm *:bg-base-300 *:text-xs *:text-neutral-500 *:rounded-sm *:p-1 *:font-bold *:capitalize tracking-wider">
-        <Link href={`http://localhost:3000/products/${e.category}/${e._id}`}>
-          review
-        </Link>
+        <Link href={`/products/${e.category}/${e._id}`}>review</Link>
         {e.inStock === "true" ? (
           <>
             {isInCart(e._id) ? null : (
