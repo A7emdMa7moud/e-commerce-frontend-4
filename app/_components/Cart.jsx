@@ -38,7 +38,7 @@ function Cart() {
   };
 
   return (
-    <div className="dropdown dropdown-end">
+    <div className="dropdown dropdown-content">
       <div
         tabIndex={0}
         role="button"
@@ -96,12 +96,12 @@ function Cart() {
           {productsLenght}
         </span>
       </div>
-      <ul className="menu border-base-100 lg:menu-md menu-sm dropdown-content w-[50dvw] bg-base-200 rounded-2xl p-2 mt-5 shadow">
+      <ul className="border-base-100 lg:menu-md menu-sm dropdown-content w-[93dvw] fixed right-[-220%] lg:w-[50dvw] bg-base-200 rounded-2xl p-2 mt-5 shadow">
         {productsCart.length >= 1 ? (
           productsCart.map((e, i) => (
             <li
               key={i}
-              className="*:font-medium *:tracking-wider text-neutral-500 grid grid-cols-12 items-center gap-2 *:overflow-hidden *:whitespace-nowrap"
+              className="*:font-medium *:tracking-wider text-neutral-500 grid grid-cols-12 items-center gap-2 lg:gap-2 *:overflow-hidden *:whitespace-nowrap *:text-xs lg:*:text-sm"
             >
               <p className="col-span-1">{e.id}</p>
               <p className="col-span-5 text-ellipsis">{e.name}</p>
@@ -115,8 +115,8 @@ function Cart() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={25}
-                  height={25}
+                  width={20}
+                  height={20}
                   viewBox="0 0 24 24"
                   fill="none"
                 >
@@ -138,8 +138,8 @@ function Cart() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={25}
-                  height={25}
+                  width={20}
+                  height={20}
                   viewBox="0 0 24 24"
                   fill="none"
                 >
@@ -160,8 +160,8 @@ function Cart() {
                 className="col-span-1 mx-auto transition p-1 rounded-lg"
               >
                 <svg
-                  width={25}
-                  height={25}
+                  width={20}
+                  height={20}
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -195,15 +195,15 @@ function Cart() {
         )}
         {productsLenght > 0 ? <br /> : null}
         {productsLenght > 0 ? (
-          <div className="flex flex-row-reverse gap-4 items-center px-4">
+          <div className="flex flex-row-reverse gap-4 items-center lg:px-4">
             <Link
               href={"/profile/cart"}
-              className="flex justify-center items-center px-2 py-1 bg-secondary rounded text-secondary-content p-2 w-40 btn btn-md font-bold tracking-wider text-lg capitalize"
+              className="flex justify-center items-center px-2 py-1 bg-secondary rounded text-secondary-content p-2 w-40 btn btn-sm lg:btn-md font-bold tracking-wider text-sm lg:text-lg capitalize"
               onClick={pushToCart}
             >
               confirm order
             </Link>
-            <p className="px-4 capitalize tracking-wider font-medium text-neutral-500">
+            <p className="lg:px-4 capitalize tracking-wider text-sm lg:font-medium text-neutral-500">
               total price{" "}
               <span className="font-bold text-green-500">{totalPrice} LE</span>
             </p>
