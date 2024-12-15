@@ -1,7 +1,7 @@
 "use client";
 import ProductCard from "@/app/_components/productcard";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 export default function Page({ params }) {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL; // For Next.js
 
