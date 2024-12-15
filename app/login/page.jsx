@@ -55,7 +55,7 @@ function Login() {
           order,
         };
         dispatch(updateUserData({ user: userSlice }));
-        window.location.href = "/";
+        // window.location.href = "/";
       });
     } catch (error) {
       const errMsg = Object.values(error.response.data.errors.errors);
