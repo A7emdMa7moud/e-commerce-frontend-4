@@ -33,9 +33,9 @@ export default function Nav_bar() {
           })
           .catch((err) => {
             if (err) {
-              console.log(err);
+              // console.log(err);
             }
-            console.log("logged out false");
+            // console.log("logged out false");
           });
       }
     });

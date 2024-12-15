@@ -60,7 +60,9 @@ export default function Page() {
       .then((res) => {
         // console.log(res.data.updatedUser);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        // console.log(err);
+      });
   };
   return (
     <section>

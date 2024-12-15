@@ -27,7 +27,7 @@ export default function Signup() {
     theme,
   };
   const newSignup = async (url) => {
-    console.log(`${url}/signup`);
+    // console.log(`${url}/signup`);
     try {
       const res = await axios.post(`${url}/signup`, userData, {
         withCredentials: true, // Important to include cookies

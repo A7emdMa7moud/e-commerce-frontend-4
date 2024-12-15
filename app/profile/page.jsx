@@ -11,8 +11,6 @@ export default function Page() {
   // Use the prefixed variable
   const secretApiKey = process.env.NEXT_PUBLIC_SECRET_API_KEY;
   const url = process.env.URL;
-  console.log("Client-side secret:", secretApiKey);
-  console.log("url", url);
   return (
     <section className="min-h-[71dvh]">
       <div className="flex justify-between items-center">

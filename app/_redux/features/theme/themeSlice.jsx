@@ -12,7 +12,7 @@ const themeSlice = createSlice({
       localStorage.setItem("theme", action.payload);
       const html = document.getElementById("html");
       html.setAttribute("data-theme", action.payload);
-      console.log(html.getAttribute("data-theme"));
+      // console.log(html.getAttribute("data-theme"));
     },
   },
 });
