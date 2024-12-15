@@ -56,7 +56,9 @@ function Login() {
         };
         dispatch(updateUserData({ user: userSlice }));
         dispatch(addOrder(orders));
-        dispatch(updataCart(cart[0]));
+        if (cart.length > 0) {
+          dispatch(updataCart(cart[0]));
+        }
         window.location.href = "/";
       });
     } catch (error) {
