@@ -24,7 +24,7 @@ const userSlice = createSlice({
     phone: "",
     theme: "dark",
     cart: [],
-    order: [],
+    orders: [],
     isLoaning: "",
     isError: "",
   },
@@ -39,7 +39,7 @@ const userSlice = createSlice({
       state.phone = user.phone || "";
       state.theme = user.theme || "";
       state.cart = user.cart || [];
-      state.order = user.order || [];
+      state.orders = user.orders || [];
     },
     updateUserPhone: (state, action) => {
       state.phone = action.payload.phone;

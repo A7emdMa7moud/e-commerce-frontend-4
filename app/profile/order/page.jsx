@@ -42,9 +42,8 @@ export default function Order() {
           showConfirmButton: true,
           confirmButtonColor: "#82bcf4",
           title: "Success",
-          html: `<b>${
-            res.data.newUser.name || "User"
-          }</b> was created successfully`,
+          html: `<b>your order
+           </b> was created successfully`,
           icon: "success",
         }).then(() => {
           window.location.href = "/";

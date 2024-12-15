@@ -7,10 +7,7 @@ import DeliveryProgress from "../_components/DeliveryProgress";
 
 export default function Page() {
   const orders = useSelector((state) => state.orders.orders);
-
-  // Use the prefixed variable
-  const secretApiKey = process.env.NEXT_PUBLIC_SECRET_API_KEY;
-  const url = process.env.URL;
+  console.log(orders);
   return (
     <section className="min-h-[71dvh]">
       <div className="flex justify-between items-center">

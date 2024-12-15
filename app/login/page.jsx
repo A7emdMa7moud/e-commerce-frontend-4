@@ -7,6 +7,7 @@ import PageTitle from "../_components/PageTitle";
 import { useDispatch } from "react-redux";
 import { updateUserData } from "../_redux/features/user/userSlice";
 import { updataCart } from "../_redux/features/cart/cartSlice";
+import { addOrder } from "../_redux/features/orders/ordersSlice";
 function Login() {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL; // For Next.js
   const dispatch = useDispatch();
@@ -40,9 +41,8 @@ function Login() {
           phone,
           theme,
           cart = [],
-          order = [],
+          orders = [],
         } = res.data.user;
-        dispatch(updataCart(cart[0]));
         const userSlice = {
           id,
           name,
@@ -52,9 +52,11 @@ function Login() {
           phone,
           theme,
           cart,
-          order,
+          orders,
         };
         dispatch(updateUserData({ user: userSlice }));
+        dispatch(addOrder(orders));
+        dispatch(updataCart(cart[0]));
         window.location.href = "/";
       });
     } catch (error) {

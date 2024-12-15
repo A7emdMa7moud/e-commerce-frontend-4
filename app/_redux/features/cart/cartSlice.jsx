@@ -12,7 +12,9 @@ const cartSlice = createSlice({
   },
   reducers: {
     updataCart: (state, action) => {
-      state.items = action.payload.products;
+      if (action.payload.quantity > 0) {
+        state.items = action.payload.products;
+      }
       state.totalPrice += action.payload.totalPrice;
       state.quantity += action.payload.quantity;
       state.productsLenght = action.payload.products.length;

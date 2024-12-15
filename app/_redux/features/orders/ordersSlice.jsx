@@ -9,8 +9,8 @@ const ordersSlice = createSlice({
   initialState,
   reducers: {
     addOrder: (state, action) => {
-      state.orders = action.payload.orders;
-      state.ordersLength = state.orders.length;
+      state.orders = action.payload;
+      state.ordersLength = state.orders.length || 0;
     },
   },
 });
