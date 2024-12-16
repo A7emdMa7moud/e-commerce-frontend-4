@@ -69,7 +69,6 @@ export default function Delivery() {
       setPostalCode(shippingAddressFromSlice.zipCode || "");
     }
   }, [shippingAddressFromSlice]);
-  console.log(productsLenght);
   return (
     <section>
       <PageTitle title={"delivery details"} />
