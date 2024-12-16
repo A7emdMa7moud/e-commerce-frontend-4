@@ -84,11 +84,7 @@ export default function Page() {
         <p className="capitalize pl-4 tracking-wider text-lg">
           {/* Add other order display components here */}
         </p>
-<<<<<<< HEAD
-        <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
-=======
         <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:p-2 lg*:min-w-40 *:px-8 *:btn *:btn-md *:font-bold *:tracking-wider *:text-sm lg:*:text-lg *:capitalize">
->>>>>>> 681bcbdb82eb364ad3812d4ef9399ebf09346615
           <Link href={"/products"}>view more products</Link>
         </div>
       </div>
