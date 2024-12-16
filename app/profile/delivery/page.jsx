@@ -83,7 +83,7 @@ export default function Delivery() {
             handleReset(e);
           }}
         >
-          <div className="overflow-auto h-[71dvh] mx-auto rounded-xl">
+          <div className="overflow-auto sm:min-h-[53dvh] lg:min-h-[76dvh] mx-auto rounded-lg flex flex-col justify-center gap-4">
             <div className="flex flex-col h-full w-full justify-center items-center gap-4 *:w-full *:flex *:flex-col *:lg:flex-row *:gap-1 *:capitalize *:tracking-wider *:*:w-full lg:*:*:w-[50%] *:*:mx-auto">
               <div>
                 <label htmlFor="country">
@@ -168,7 +168,7 @@ export default function Delivery() {
             </div>
           </div>
           <br />
-          <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:p-2 *:w-40 *:btn *:btn-md *:font-bold *:tracking-wider *:text-lg *:capitalize">
+          <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
             {isAddress == true ? (
               <Link href={"/profile/details"}>next</Link>
             ) : (

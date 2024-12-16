@@ -110,13 +110,13 @@ export default function Order() {
       <br />
       {productsLenght > 0 ? (
         <>
-          <div className="h-[71dvh] grid grid-cols-5 gap-4 rounded-xl overflow-hidden">
-            <div className="col-span-3 sticky top-0 z-10 flex flex-col gap-4">
+          <div className="sm:min-h-[53dvh] lg:min-h-[76dvh] flex flex-col lg:grid lg:grid-cols-5 content-center gap-4 rounded-xl overflow-hidden">
+            <div className="lg:col-span-3 sticky top-0 z-10 flex flex-col gap-4">
               <div className="p-4 bg-base-200 rounded-lg">
-                <p className="text-2xl font-bold tracking-wider capitalize mb-2">
+                <p className="lg:text-2xl text-lg font-bold tracking-wider capitalize mb-2">
                   your info
                 </p>
-                <div className="flex flex-col *:grid *:grid-cols-7 *:gap-4">
+                <div className="flex flex-col *:grid *:grid-cols-7 *:text-sm *:gap-4">
                   <div className="*:tracking-wider *:capitalize">
                     <p className="col-span-3">name</p>
                     <p className="col-span-4">{order.customer.name}</p>
@@ -132,10 +132,10 @@ export default function Order() {
                 </div>
               </div>
               <div className="p-4 bg-base-200 rounded-lg">
-                <p className="text-2xl font-bold tracking-wider capitalize mb-2">
+                <p className="lg:text-2xl text-lg font-bold tracking-wider capitalize mb-2">
                   your address
                 </p>
-                <div className="flex flex-col *:grid *:grid-cols-7 *:gap-4">
+                <div className="flex flex-col *:grid *:grid-cols-7 *:text-sm *:gap-4">
                   <div className="*:tracking-wider *:capitalize">
                     <p className="col-span-3">country</p>
                     <p className="col-span-4">
@@ -163,10 +163,10 @@ export default function Order() {
                 </div>
               </div>
               <div className="p-4 bg-base-200 rounded-lg">
-                <p className="text-2xl font-bold tracking-wider capitalize mb-2">
+                <p className="lg:text-2xl text-lg font-bold tracking-wider capitalize mb-2">
                   payment and details
                 </p>
-                <div className="flex flex-col *:grid *:grid-cols-7 *:gap-4">
+                <div className="flex flex-col *:grid *:grid-cols-7 *:text-sm *:gap-4">
                   <div className="*:tracking-wider *:capitalize">
                     <p className="col-span-3">paymeny method</p>
                     <p className="col-span-4">{order.paymentMethod}</p>
@@ -178,7 +178,9 @@ export default function Order() {
                   <div className="*:tracking-wider *:capitalize">
                     <p className="col-span-3">delivery date</p>
                     <p className="col-span-4">
-                      {formatDate(order.deliveryDate)}
+                      {formatDate(order.deliveryDate).endsWith("N")
+                        ? ""
+                        : formatDate(order.deliveryDate)}
                     </p>
                   </div>
                   <div className="*:tracking-wider *:capitalize">
@@ -200,7 +202,7 @@ export default function Order() {
                 </div>
               </div>
             </div>
-            <div className="col-span-2 overflow-auto flex flex-col gap-4 *:bg-base-200 *:p-4 *:rounded">
+            <div className="lg:col-span-2 overflow-auto flex flex-col gap-4 *:bg-base-200 *:p-4 *:rounded">
               {products.map((e, i) => {
                 return (
                   <div key={i} className="relative">
@@ -232,7 +234,7 @@ export default function Order() {
             </div>
           </div>
           <br />
-          <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:p-2 *:w-40 *:btn *:btn-md *:font-bold *:tracking-wider *:text-lg *:capitalize">
+          <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
             <button
               onClick={() => {
                 PostOrderAndResetCart(backendUrl);

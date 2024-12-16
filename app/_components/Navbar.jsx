@@ -139,7 +139,6 @@ export default function Nav_bar() {
                 role="button"
                 className="btn btn-square btn-ghost"
               >
-                {/* i have edit and edit gender */}
                 <div className="btn btn-square bg-base-300 shadow-none">
                   {user.gender === "male" ? (
                     <svg
@@ -374,7 +373,7 @@ export default function Nav_bar() {
               {/* display name and logout */}
               <ul
                 tabIndex={0}
-                className="menu lg:menu-md menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-5 w-52 p-2 shadow *:font-semibold *:tracking-wider *:capitalize "
+                className="menu menu-xs lg:menu-md dropdown-content bg-base-200 rounded-box z-[1] mt-5 w-52 p-2 shadow *:font-semibold *:tracking-wider *:capitalize "
               >
                 <li>
                   <Link
@@ -431,7 +430,7 @@ export default function Nav_bar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-md dropdown-content  bg-base-200 rounded-box z-[1] mt-5 w-52 p-2 shadow *:font-semibold *:tracking-wider *:capitalize "
+              className="menu menu-xs lg:menu-md dropdown-content bg-base-200 rounded-box z-[1] mt-5 w-52 p-2 shadow *:font-semibold *:tracking-wider *:capitalize "
             >
               <li>
                 <Link href={"/products"}>products</Link>

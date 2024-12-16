@@ -89,7 +89,7 @@ export default function ToggleTheme() {
           <input
             type="radio"
             name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+            className="theme-controller btn btn-xs lg:btn-sm btn-block btn-ghost justify-start"
             aria-label="light"
             value="light"
             onClick={() => handleThemeChange("light")}
@@ -103,7 +103,7 @@ export default function ToggleTheme() {
           <input
             type="radio"
             name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+            className="theme-controller btn btn-xs lg:btn-sm btn-block btn-ghost justify-start"
             aria-label="dark"
             value="dark"
             onClick={() => handleThemeChange("dark")}
@@ -118,7 +118,7 @@ export default function ToggleTheme() {
           <input
             type="radio"
             name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+            className="theme-controller btn btn-xs lg:btn-sm btn-block btn-ghost justify-start"
             aria-label="cupcake"
             value="cupcake"
             onClick={() => handleThemeChange("cupcake")}

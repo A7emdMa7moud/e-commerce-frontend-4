@@ -70,7 +70,7 @@ export default function Page() {
       <br />
       {productsLenght > 0 ? (
         <>
-          <div className="overflow-auto h-[71dvh] mx-auto rounded-xl">
+          <div className="overflow-auto sm:min-h-[53dvh] lg:min-h-[76dvh] mx-auto rounded-lg flex flex-col justify-center gap-4">
             <table className="w-full bg-base-200 rounded-lg overflow-hidden text-left relative">
               <thead className="bg-main text-secondary-content text-sm lg:text-lg border-red-400">
                 <tr className="*:p-2 *:py-4">
@@ -129,7 +129,7 @@ export default function Page() {
             <p className="capitalize tracking-wider text-lg">
               total price is <span className="text-main">{totalPrice}</span>{" "}
             </p>
-            <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:p-2 *:min-w-40 *:px-8 *:btn *:btn-md *:font-bold *:tracking-wider *:text-lg *:capitalize">
+            <div className="flex flex-row-reverse gap-4 w-full items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
               <Link
                 href={"/profile/delivery"}
                 onClick={() => {
