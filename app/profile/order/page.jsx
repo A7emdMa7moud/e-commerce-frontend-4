@@ -202,7 +202,7 @@ export default function Order() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-2 overflow-auto flex flex-col gap-4 *:bg-base-200 *:p-4 *:rounded">
+            <div className="lg:col-span-2 grid grid-cols-2 overflow-auto gap-4 *:bg-base-200 *:p-4 *:rounded">
               {products.map((e, i) => {
                 return (
                   <div key={i} className="relative">
@@ -234,7 +234,7 @@ export default function Order() {
             </div>
           </div>
           <br />
-          <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
+          <div className="w-full flex flex-row-reverse items-center gap-4 *:bg-secondary *:rounded *:text-secondary-content lg:*:min-w-40 *:px-8 *:btn *:btn-sm lg:*:btn-md *:font-bold *:tracking-wider *:text-sm lg:*:text-lg *:capitalize">
             <button
               onClick={() => {
                 PostOrderAndResetCart(backendUrl);

@@ -168,7 +168,7 @@ export default function Delivery() {
             </div>
           </div>
           <br />
-          <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
+          <div className="w-full flex flex-row-reverse items-center gap-4 *:bg-secondary *:rounded *:text-secondary-content lg:*:min-w-40 *:px-8 *:btn *:btn-sm lg:*:btn-md *:font-bold *:tracking-wider *:text-sm lg:*:text-lg *:capitalize">
             {isAddress == true ? (
               <Link href={"/profile/details"}>next</Link>
             ) : (
