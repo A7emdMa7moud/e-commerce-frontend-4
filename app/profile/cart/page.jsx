@@ -129,7 +129,11 @@ export default function Page() {
             <p className="capitalize tracking-wider text-lg">
               total price is <span className="text-main">{totalPrice}</span>{" "}
             </p>
+<<<<<<< HEAD
             <div className="flex flex-row-reverse gap-4 w-full items-center *:bg-secondary *:rounded *:text-secondary-content *:px-4 lg:*:w-40 *:btn *:btn-md  lg:*:btn-md *:font-bold *:tracking-wider *:text-lg lg:*:text-lg *:capitalize">
+=======
+            <div className="flex flex-row-reverse gap-4 items-center *:bg-secondary *:rounded *:text-secondary-content *:p-2 lg:*:min-w-40 lg:*:px-8 *:btn *:btn-sm lg:*:btn-md *:font-bold *:tracking-wider *:text-sm lg:*:text-lg *:capitalize">
+>>>>>>> 681bcbdb82eb364ad3812d4ef9399ebf09346615
               <Link
                 href={"/profile/delivery"}
                 onClick={() => {

@@ -46,7 +46,7 @@ export default function Nav_bar() {
     setToken(localStorage.getItem("JWT"));
   }, [user, token]);
   return (
-    <nav className="fixed w-full shadow z-50 flex justify-between items-center gap-4 p-2 bg-base-200">
+    <nav className="fixed buttom-0 w-full shadow z-50 flex justify-between items-center gap-4 p-2 bg-base-200">
       {/* title and theme and logo */}
       <Link
         href={"/"}
