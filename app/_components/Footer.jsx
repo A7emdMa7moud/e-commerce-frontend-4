@@ -1,4 +1,12 @@
 import Link from "next/link";
+import {
+  FaFacebook,
+  FaFileVideo,
+  FaGithub,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { FaFileCircleExclamation, FaUpwork } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -13,6 +21,18 @@ export default function Footer() {
             <Link href={"/"}>login</Link>
             <Link href={"/"}>signup</Link>
           </ul>
+        </div>
+        <div className="col-span-3">
+          <p className="py-2 tracking-wider font-medium capitalize">
+            created by <span className="text-main"> ahmed mahmoud</span>
+          </p>
+          <div className="flex gap-2 hover:*:text-main  *:cursor-pointer">
+            <FaGithub size={20} />
+            <FaFacebook size={20} />
+            <FaInstagram size={20} />
+            <FaWhatsapp size={20} />
+            <FaUpwork size={20} />
+          </div>
         </div>
       </div>
     </footer>
