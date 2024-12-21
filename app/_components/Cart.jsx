@@ -198,7 +198,7 @@ function Cart() {
           <div className="flex flex-row-reverse gap-4 items-center lg:px-4">
             <Link
               href={"/profile/cart"}
-              className="flex justify-center items-center px-2 py-1 bg-secondary rounded text-secondary-content p-2 w-40 btn font-bold tracking-wider text-sm lg:text-lg capitalize"
+              className="flex justify-center items-center px-2 py-1 bg-secondary rounded text-secondary-content p-2 w-40 btn btn-sm font-bold tracking-wider text-sm lg:text-lg capitalize"
               onClick={pushToCart}
             >
               confirm order
