@@ -17,7 +17,7 @@ export default function Home() {
         <div className="col-span-3 m-auto">
           <h1 className="lg:text-2xl lg:font-bold font-semibold capitalize mb-4">
             <span className="lg:text-5xl text-2xl text-main font-extrabold uppercase tracking-wider">
-              E-commercs
+              E-commerce
             </span>
             <br />
             <span className="text-secondary font-semibold">website</span>
